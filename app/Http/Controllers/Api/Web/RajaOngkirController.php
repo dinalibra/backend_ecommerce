@@ -55,7 +55,7 @@ class RajaOngkirController extends Controller
         $response = Http::withHeaders([
             //api key rajaongkir
             'key'          => config('services.rajaongkir.key')
-        ])->post('https://api.rajaongkir.com/starter/cost', [
+        ])->post('api.rajaongkir.com/starter/cost', [
 
             //send data
             'origin'      => 113, // ID kota Demak
